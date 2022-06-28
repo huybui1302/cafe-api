@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Cafe</title>
+</head>
+<body>
+    <form action="{{ url_for('add_cafe') }}" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required placeholder="name"><br><br>
+        <label>Seats</label>
+        <input type="text" name="seats" placeholder="number of seats"><br><br>
+        <label>Location</label>
+        <input type="text" name="location" required placeholder="location"><br><br>
+        <label>Map</label>
+        <input type="text" name="map_url" placeholder="insert url here"><br><br>
+        <label>Image</label>
+        <input type="text" name="img_url" placeholder="insert url here"><br><br>
+        <label>Toilet</label>
+        <input type="text" name="has_toilet" placeholder="true/false"><br><br>
+        <label>Wifi</label>
+        <input type="text" name="has_wifi" required placeholder="true/false"><br><br>
+        <label>Power outlet</label>
+        <input type="text" name="has_sockets" placeholder="true/false"><br><br>
+        <label>Calls</label>
+        <input type="text" name="can_take_calls" placeholder="true/false"><br><br>
+        <label>Price</label>
+        <input type="text" name="coffee_price" required placeholder="price"><br><br>
+        <button type="submit">Add Cafe</button>
+    </form>
+</body>
+</html>
